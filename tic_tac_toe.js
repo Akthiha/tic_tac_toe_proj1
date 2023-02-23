@@ -1,4 +1,4 @@
-const cells = document.querySelectorAll('.cell'); 
+const cells = document.querySelectorAll('.cell');  
 const message = document.getElementById('message');
 const resetBtn = document.getElementById('reset');
 let currentPlayer = 'X';
@@ -6,6 +6,7 @@ let gameEnd = false;
 let moves = 0;
 let board = ['','','','','','','','',''];
 
+// Define winning 
 const checkWinner = () => {
   const winCombinations = [
     [0,1,2], [3,4,5], [6,7,8], //row
