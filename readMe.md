@@ -12,19 +12,19 @@ Development Steps
 - Use Grid for CSS instead of flex for easier implementation
 - Set Variables 
 - Define Function 
-- Usign DOM to select each class and IDs and return to DOM node
+- Use DOM to select each class and IDs and return to DOM node
 - Refactorizing and proper comments
 
 Current version
-Render a game in the browser 
-Switch turns between more than one player (2 player playing on a single computer)
-Design logic for winning & visually display which player won
-Design logic for a draw game & visually display when there is a draw
-Include separate HTML / CSS / JavaScript files
-Stick with KISS (Keep It Simple Stupid) principles
-Use Javascript for DOM manipulation
-Deploy your game online, where the rest of the world can access it
-Use semantic markup for HTML and CSS (adhere to best practices)
+-Render a game in the browser 
+-Switch turns between more than one player (2 player playing on a single computer)
+-Design logic for winning & visually display which player won
+-Design logic for a draw game & visually display when there is a draw
+-Include separate HTML / CSS / JavaScript files
+-Stick with KISS (Keep It Simple Stupid) principles
+-Use Javascript for DOM manipulation
+-Deploy your game online, where the rest of the world can access it
+-Use semantic markup for HTML and CSS (adhere to best practices)
 
 Future Updates
 To add game modes
