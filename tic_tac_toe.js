@@ -1,6 +1,8 @@
 const cells = document.querySelectorAll('.cell');  
 const message = document.getElementById('message');
 const resetBtn = document.getElementById('reset');
+const mediumModeBtn = document.getElementById('mediumModeBtn');
+const hardModeBtn = document.getElementById('hardModeBtn');
 let currentPlayer = 'X'; // Keeping track of each turn
 let gameEnd = false; // To indicate if game ends or not
 let moves = 0; // Keep track of number of moves
@@ -57,7 +59,28 @@ const handleReset = () => {
     cell.textContent = '';
     cell.classList.remove('x', 'o');
   });
+  document.querySelector('.board').classList.remove('rotate');
+  document.querySelector('.board').classList.remove('fly');
 }
+
+mediumModeBtn.addEventListener('click', () => {
+  document.querySelector('.board').classList.add('rotate');
+});
+
+hardModeBtn.addEventListener('click', () => {
+  document.querySelector('.cell').classList.add('fly');
+});
+
+
+
+// hardModeBtn.addEventListener('click', () => {
+//   cells.forEach((cell, index) => {
+//     cell.classList.add('fly');
+//     cell.id = index.toString();
+//     // Add the 'fly' class and set the 'id' to the index of the cell
+//   });
+// });
+
 
 cells.forEach(cell => {
   cell.addEventListener('click', handleCellClick);

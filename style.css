@@ -14,6 +14,17 @@
   margin: 20px auto;
   border: none;
 }
+.board.rotate {
+  animation: rotate 10s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
 
 .cell {
   background-color: #eee;
@@ -28,6 +39,127 @@
   background-color: #ddd;
 }
 
+.cell.fly#2 {
+  animation: fly 10s infinite linear;
+}
+@keyframes fly {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 50px);
+  }
+} 
+/* .cell.fly#0 {
+  animation: fly-0 5s infinite linear;
+}
+.cell.fly#1 {
+  animation: fly-1 5s infinite linear;
+}
+.cell.fly#2 {
+  animation: fly-2 5s infinite linear;
+}
+.cell.fly#3 {
+  animation: fly-3 5s infinite linear;
+}
+.cell.fly#4 {
+  animation: fly-4 5s infinite linear;
+}
+.cell.fly#5 {
+  animation: fly-5 5s infinite linear;
+}
+.cell.fly#6 {
+  animation: fly-6 5s infinite linear;
+}
+.cell.fly#7 {
+  animation: fly-7 5s infinite linear;
+}
+.cell.fly#8 {
+  animation: fly-8 5s infinite linear;
+}
+
+/* Repeat for each cell id (0-8) */
+
+/* @keyframes fly-0 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+@keyframes fly-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(150px, 50px);
+  }
+}
+
+@keyframes fly-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(250px, 50px);
+  }
+}
+
+@keyframes fly-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(350px, 50px);
+  }
+}
+
+@keyframes fly-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(450px, 50px);
+  }
+}
+
+@keyframes fly-5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(550px, 50px);
+  }
+}
+
+@keyframes fly-6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(650px, 100px);
+  }
+}
+
+@keyframes fly-7 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(750px, 50px);
+  }
+}
+
+@keyframes fly-8 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(850px, 50px);
+  }
+} */ 
 .x {
   color: blue;
 }
@@ -40,6 +172,8 @@
   margin-top: 20px;
   font-size: 20px;
 }
+
+
 
 
 
